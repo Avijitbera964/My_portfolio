@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom:0;
+            width: 100%;
+        }
+
+        .project-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-item{
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .project-item img{
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AVIJIT BERA</h1>
+        <p>Web Developer | Designer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="avijit_img.jpg" alt="my Profile" class="profile-image">
+        <p>
+            Hello! I'm a passionate web developer with a focus on creating clean and user-friendly websites. I enjoy learning new technologies and solving challenging problems.
+        </p>
+        <p>
+            I have experience with HTML, CSS, JavaScript, and some backend technologies.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="placeholder-project.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A brief description of project 1.</p>
+            </div>
+            <div class="project-item">
+                <img src="placeholder-project.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A brief description of project 2.</p>
+            </div>
+            <div class="project-item">
+                <img src="placeholder-project.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A brief description of project 3.</p>
+            </div>
+            <div class="project-item">
+                <img src="placeholder-project.jpg" alt="Project 4">
+                <h3>Project 4</h3>
+                <p>A brief description of project 4.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>GitHub: github.com/yourusername</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+</body>
+</html>
